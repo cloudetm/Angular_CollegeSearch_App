@@ -1,0 +1,101 @@
+[
+  {
+    "id": 0,
+    "name": "S.p College",
+    "location": "Tilak Road.",
+    "course": "A 10",
+    "duration": "A 20",
+    "hostel": "AC 30",
+    "faculty": "AC 40",
+    "fees": "10000",
+    "funding": "AC 40",
+
+    "state":"Maharashtra",
+    "city":"Pune"
+  },
+  {
+    "id": 1,
+    "name": "Garware College",
+    "location": "Krave rd",
+    "course": "AC 10",
+    "duration": "C 20",
+    "hostel": "C 30",
+    "faculty": "C 40",
+    "fees": "40000",
+    "funding": "C 40",
+
+    "state":"Hyderabad",
+    "City":"Hyderabad"
+  },
+  {
+    "id": 2,
+    "name": "FC College",
+    "location": "FC rd",
+    "course": "C 10",
+    "duration": "C 20",
+    "hostel": "C 30",
+    "faculty": "C 40",
+    "fees": "560040",
+    "funding": "C 40",
+    "imageUrl":"img/college1.jpg",
+    "state":"Hariyana",
+    "City":"Hariyana"
+  },
+  {
+    "id": 3,
+    "name": "Wadia College",
+    "location": "Ruby hall",
+    "course": "C 10",
+    "duration": "C 20",
+    "hostel": "C 30",
+    "faculty": "C 40",
+    "fees": "10000040",
+    "funding": "C 40",
+    "imageUrl":"img/college1.jpg",
+    "state":"Delhi",
+    "City":"Delhi"
+  },
+  {
+    "id": 4,
+    "name": "def",
+    "location": "Krave rd",
+    "course": "AC 10",
+    "duration": "C 20",
+    "hostel": "C 30",
+    "faculty": "C 40",
+    "fees": "40000",
+    "funding": "C 40",
+    "imageUrl":"img/college1.jpg",
+    "state":"Punjab",
+    "City":"Chandigarh"
+      },
+  {
+    "id": 5,
+    "name": "abc",
+    "location": "Krave rd",
+    "course": "AC 10",
+    "duration": "C 20",
+    "hostel": "C 30",
+    "faculty": "C 40",
+    "fees": "40000",
+    "funding": "C 40",
+    "imageUrl":"img/college1.jpg",
+    "state":"Himachal Pradesh",
+    "City":"Himachal"
+  }
+  ,
+  {
+    "id": 6,
+    "name": "defgh",
+    "location": "Krave rd",
+    "course": "AC 10",
+    "duration": "C 20",
+    "hostel": "C 30",
+    "faculty": "C 40",
+    "fees": "40000",
+    "funding": "C 40",
+    "imageUrl":"img/college1.jpg",
+    "state":"Kerla",
+    "City":"Thekadi"
+  }
+]

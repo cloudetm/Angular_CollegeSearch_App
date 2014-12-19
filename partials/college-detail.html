@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="Services/CollegeService.js"></script>
+    <script src="Controller/CollegeController.js"></script>
+
+</head>
+<body>
+<h2> This is details Page !!!!</h2>
+
+<ul class="colleges">
+    <!-- It will display list of colleges having different college name, duplicates are not displayed -->
+    <li ng-repeat="selectedCollege in selection  | unique: 'name'" class="thumbnail ng-scope">
+        <p> <b style="color: blue"> {{"Name : "}} {{selectedCollege.name}}</b> <br>
+            {{"Duration : "}}{{selectedCollege.duration}} <br>
+            {{"hostel : "}}{{selectedCollege.hostel}} <br>
+            {{"fees : "}}{{selectedCollege.fees}} <br>
+            {{"faculty : "}}{{selectedCollege.faculty}} <br>
+            {{"State : "}}{{selectedCollege.state}} <br>
+        </p>
+    </li>
+</ul>
+<br> <br>
+<div style="float: right">
+    <label> Please click to add more colleges to see details.</label>
+    <input type="submit"
+           value="Go back"
+           ng-click="getWelcome()" />
+</div><br> <br>
+<style>
+    .colleges {
+        list-style:disc;
+    }
+
+</style>
+</body>
+</html>

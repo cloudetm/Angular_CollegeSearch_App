@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "name": "College Name"
+     },
+  {
+    "id": 1,
+    "name": "Duration"
+  },
+  {
+    "id": 2,
+    "name": "Hostel Facility"
+  },
+  {
+    "id": 3,
+    "name": "Country"
+  },
+  {
+    "id": 4,
+    "name": "Credit Limit"
+      },
+  {
+    "id": 5,
+    "name": "State"
+  }
+
+]

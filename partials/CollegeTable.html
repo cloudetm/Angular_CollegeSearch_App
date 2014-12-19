@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Home</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="Services/CollegeService.js"></script>
+    <script src="Controller/CollegeController.js"></script>
+</head>
+<body>
+<div id="page">
+
+<div>
+
+            <div class="data">
+
+
+                <div class="row col-md-12">
+
+                    <div class="col-md-3">Search by Keyword :
+                        <input type="text" ng-model="search" ng-change="filter()" placeholder="Filter" class="form-control" />
+                    </div>
+                    <br>
+                    <div> Select from below list to view details....</div>
+                </div>
+                <br/>
+
+                <div class="col-md-12">
+                    <br>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                            <tr>
+
+                            <th> </th>
+                            <th ng-repeat="header in headerList">{{header.name}}&nbsp;</i></a> </th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="college in filtered = (Collegelist | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+                               <td>  <input id="{{college}}" type="checkbox" value="{{college}}"
+                                            ng-checked="selection.indexOf(college) > -1" ng-click="toggleSelection(college)" /></td>
+                                <td>{{college.name}}</td>
+                                <td>{{college.duration}}</td>
+                                <td>{{college.hostel}}</td>
+                                <td>{{college.fees}}</td>
+                                <td>{{college.faculty}}</td>
+                                <td>{{college.state}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                <div class="col-md-12" ng-show="filteredItems > 0">
+                    <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+                </div>
+                    <div class="right">
+
+                        <input type="button"
+                               value="Show details"
+                               ng-click="getDetails()" />&nbsp;
+                        <input type="submit"
+                               value="ABCD Plan"
+                               ng-click="getPlan()"/>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+</body>
+</html>

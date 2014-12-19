@@ -1,0 +1,53 @@
+<form name="addForm" novalidate>
+      <!-- Input Fields -->
+    <div>
+        <label for="nameInput">Name : <span class="red">*</span>:</label>
+        <input id="nameInput"
+               type="text"
+               name="nameField"
+               ng-model="name"
+
+               required
+                />
+
+    </div>
+    <div>
+        <label for="phoneInput">Phone  :<span class="red">*</span></label>
+        <input id="phoneInput"
+               type="text"
+               name="phoneField"
+               ng-model="phone"
+
+               required
+               />
+
+    </div>
+
+    <!-- Buttons -->
+    <div>
+        <input type="submit"
+               value="Add"
+               ng-click="add()" />
+    </div>
+
+
+</form>
+
+<style>
+    .messageBox {
+        border: 1px solid red;
+        margin-bottom: 15px;
+        padding: 7px;
+        width: 400px;
+    }
+    .red {
+        color: red;
+    }
+    form p {
+        font-size: 12px;
+        border: 1px solid red;
+        margin: 5px 10px 10px;
+        padding: 7px;
+        width: 450px;
+    }
+</style>

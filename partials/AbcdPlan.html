@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+     THIS IS FOR ABCD PLAN..................
+
+
+
+     <ul class="colleges">
+
+         <li ng-repeat="selectedCollege in selection ">
+             <p> <b style="color: blue"> {{"Name : "}} {{selectedCollege.name}}</b> <br>
+                 {{"Duration : "}}{{selectedCollege.duration}} <br>
+                 {{"hostel : "}}{{selectedCollege.hostel}} <br>
+                 {{"fees : "}}{{selectedCollege.fees}} <br>
+                 {{"faculty : "}}{{selectedCollege.faculty}} <br>
+                 {{"State : "}}{{selectedCollege.state}} <br>
+             </p>
+         </li>
+     </ul>
+
+     <div style="float: right">
+         <label> Please click to add more colleges to see details.</label>
+         <input type="submit"
+                value="Go back"
+                ng-click="getWelcome()" />
+     </div>
+     <style>
+         .colleges {
+             list-style: none;
+         }
+
+     </style>
+</body>
+</html>
